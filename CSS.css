@@ -1,0 +1,111 @@
+h1 {
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+}
+p {
+  text-align:center;
+  font-size:20px;
+}
+#five {
+    height: 25px;
+width: 25px;
+background-color: red;
+  color:white;
+border-radius: 50%;
+display: inline-block;
+  text-align:center;
+}
+#one {
+    height: 25px;
+width: 25px;
+background-color: white;
+  color:black;
+border-radius: 50%;
+display: inline-block;
+  text-align:center;
+}
+#label {
+  display:none;
+}
+#labelf {
+  display:none;
+}
+#card {
+  height: 120px;
+    width: 80px;
+    display: none;
+    border-radius: 5px;
+    background-color: white;
+  border-style:solid;
+}
+#card2 {
+  height: 120px;
+    width: 80px;
+    display: none;
+    border-radius: 5px;
+    background-color: white;
+  border-style:solid;
+}
+#cardf {
+  height: 120px;
+    width: 80px;
+    display: none;
+    border-radius: 5px;
+    background-color: white;
+  border-style:solid;
+}
+#heart {
+    height: 20px;
+    width: 80px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 5px;
+    font-weight:bold;
+    color:white;
+}
+#diamond {
+    height: 20px;
+    width: 80px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 5px;
+    font-weight:bold;
+    color:white;
+}
+#club {
+    height: 20px;
+    width: 80px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    font-weight:bold;
+}
+#spade {
+    height: 20px;
+    width: 80px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    font-weight:bold;
+}
+.choices:hover
+{
+    text-decoration:underline;
+    cursor:pointer;
+}
+.chips:hover
+{
+  cursor:pointer;
+}
+#info
+{
+    color:blue;
+    font-weight:bold;
+    font-family:Cursive;
+}
