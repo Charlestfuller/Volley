@@ -17,10 +17,12 @@ background-color: red;
   color:white;
 border-radius: 50%;
 display: inline-block;
-  text-align:center;
+  text-align:center;  
+    transform: translateX(3600%);
 }
 #one {
     height: 25px;
+    transform: translateX(3600%);
 width: 25px;
 background-color: white;
   color:black;
@@ -30,9 +32,11 @@ display: inline-block;
 }
 #label {
   display:none;
+    transform: translateX(475%);
 }
 #labelf {
   display:none;
+    transform: translateX(1320%);
 }
 #card {
   height: 120px;
@@ -40,7 +44,8 @@ display: inline-block;
     display: none;
     border-radius: 5px;
     background-color: white;
-  border-style:solid;
+  border-style:solid;  
+    transform: translateX(980%);
 }
 #card2 {
   height: 120px;
@@ -49,6 +54,7 @@ display: inline-block;
     border-radius: 5px;
     background-color: white;
   border-style:solid;
+    transform: translateX(980%);
 }
 #cardf {
   height: 120px;
@@ -57,6 +63,7 @@ display: inline-block;
     border-radius: 5px;
     background-color: white;
   border-style:solid;
+    transform: translateX(1030%);
 }
 #heart {
     height: 20px;
@@ -66,6 +73,7 @@ display: inline-block;
     border-radius: 5px;
     font-weight:bold;
     color:white;
+    transform: translateX(950%);
 }
 #diamond {
     height: 20px;
@@ -75,6 +83,7 @@ display: inline-block;
     border-radius: 5px;
     font-weight:bold;
     color:white;
+    transform: translateX(950%);
 }
 #club {
     height: 20px;
@@ -84,6 +93,7 @@ display: inline-block;
     border-radius: 5px;
     color:white;
     font-weight:bold;
+    transform: translateX(950%);
 }
 #spade {
     height: 20px;
@@ -93,6 +103,7 @@ display: inline-block;
     border-radius: 5px;
     color:white;
     font-weight:bold;
+    transform: translateX(950%);
 }
 .choices:hover
 {
@@ -108,4 +119,23 @@ display: inline-block;
     color:blue;
     font-weight:bold;
     font-family:Cursive;
+    transform: translateX(1700%);
+}
+#bet
+{
+    font-weight:bold;
+    font-family:Cursive;
+    transform: translateX(2050%);
+}
+#final
+{
+    font-weight:bold;
+    font-family:Cursive;
+    transform: translateX(1090%);
+}
+#new
+{
+    font-weight:bold;
+    font-family:Cursive;
+    transform: translateX(1150%);
 }
