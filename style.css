@@ -8,6 +8,8 @@ h1 {
 }
 body {
   background-image: url("gameBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 p {
   text-align:center;
