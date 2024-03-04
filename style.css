@@ -1,5 +1,5 @@
 h1 {
-  color: black;
+  color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -37,10 +37,12 @@ display: inline-block;
 }
 #label {
   display:none;
+  color:white;
     transform: translateX(475%);
 }
 #labelf {
   display:none;
+  color:white;
     transform: translateX(1320%);
 }
 #card {
