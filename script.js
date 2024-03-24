@@ -1,7 +1,7 @@
 $(document).ready(function() {
   enableChips();
   $ ('#info').click(function(){
-    alert ("The flow of the game is first driven by betting on a card suit.  You will then be dealt a card that will eventually be compared against the dealer’s card.  If your card is higher, you have the advantage.  If it is not, you do not have the advantage.  If you have the advantage, then you are hoping the third card matches the color of the suit that you originally bet on.  Black matches with Clubs and Spades, red matches with Hearts and Diamonds.  Match correctly and you win your bet 1:1.  If you do not have the advantage, you will need to match the suit exactly.  However, match correctly and you now win your bet 2:1.  An additional edge you have as the player is given if you receive an Ace as the third card.  You will win your bet automatically 1:1 in this case.  But if your bet happens to match the Ace suit, you will win 3:1.")
+    alert ("The flow of the game is first driven by betting on a card suit.  You will then be dealt a card that will be compared against the dealer’s card.  If your card is higher, you have the advantage.  If it is not, you do not have the advantage.  If you have the advantage, then you are hoping the third card matches the color of the suit that you originally bet on.  Black matches with Clubs and Spades; red matches with Hearts and Diamonds.  Match correctly and you win your bet 1:1.  If you do not have the advantage, you will need to match the suit exactly.  However, match correctly and you now win your bet 2:1.  An additional edge you have as the player is given if you receive an Ace as the third card.  You will win your bet automatically 1:1 unless your bet happens to match the Ace suit, in which you will win 2:1.")
     });
     
     var colormatch=false;
@@ -107,7 +107,10 @@ $(document).ready(function() {
         var dealerS = local[4];
         document.getElementById("dealerV").innerHTML = dealerV;
         document.getElementById("dealerS").innerHTML = dealerS;
-        document.getElementById("playerV").style.color=local[9];        document.getElementById("playerS").style.color=local[9];        document.getElementById("dealerV").style.color=local[10];        document.getElementById("dealerS").style.color=local[10];
+        document.getElementById("playerV").style.color=local[9];        
+        document.getElementById("playerS").style.color=local[9];        
+        document.getElementById("dealerV").style.color=local[10];        
+        document.getElementById("dealerS").style.color=local[10];
         
         if(local[0]>=local[3]){
             adv=true;
@@ -167,8 +170,8 @@ $(document).ready(function() {
     }
     if(local[6]==14 && local[7]==c)
     {
-        document.getElementById("last").innerHTML="You got an Ace and matched the suit!  You won " + 3*toBet;
-        balance = balance + 3*toBet;
+        document.getElementById("last").innerHTML="You got an Ace and matched the suit!  You won " + 2*toBet;
+        balance = balance + 2*toBet;
     }
     else if (local[6]==14 && local[7]!=c){
         document.getElementById("last").innerHTML="You got an Ace!  You won " + toBet;
