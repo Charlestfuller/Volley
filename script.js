@@ -41,6 +41,7 @@ $(document).ready(function() {
   var displaycard2 = document.getElementById("card2");
   var displaylabelf = document.getElementById("labelf");
   var displaycardf = document.getElementById("cardf");  
+  var start=1;
   
   var saveGame = localStorage.setItem(balance, JSON.stringify(balance));
   var retrieveGame = localStorage.getItem(balance);
