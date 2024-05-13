@@ -126,6 +126,7 @@ $(document).ready(function() {
         var playerV = local[2];
         var playerS = local[1];
         document.getElementById("playerV").innerHTML = playerV;
+        if(start == 1){
         if(playerS=="Diamond")
         {document.getElementById("playerS").appendChild (imgDiamond);}
         else if(playerS=="Heart")
@@ -134,9 +135,26 @@ $(document).ready(function() {
         {document.getElementById("playerS").appendChild (imgSpade);}
         else if(playerS=="Club")
         {document.getElementById("playerS").appendChild (imgClub);}
+        }
+        if(start!=1){
+          var pSuit = document.getElementById("card").children[1];
+          if(playerS=="Diamond"){
+          pSuit.replaceChild(imgDiamond, pSuit.childNodes[0]);
+          }
+        else if(playerS=="Heart"){
+          pSuit.replaceChild(imgHeart, pSuit.childNodes[0]);
+        }
+        else if(playerS=="Spade"){
+          pSuit.replaceChild(imgSpade, pSuit.childNodes[0]);
+        }
+        else if(playerS=="Club"){
+          pSuit.replaceChild(imgClub, pSuit.childNodes[0]);
+        }
+        }
         var dealerV = local[5];
         var dealerS = local[4];
         document.getElementById("dealerV").innerHTML = dealerV;
+        if(start==1){
         if(dealerS=="Diamond")
         {document.getElementById("dealerS").appendChild (Diamond2);}
         else if(dealerS=="Heart")
@@ -145,7 +163,23 @@ $(document).ready(function() {
         {document.getElementById("dealerS").appendChild (Spade2);}
         else if(dealerS=="Club")
         {document.getElementById("dealerS").appendChild (Club2);}
-        
+        }
+       else if(start!=1){
+          var dSuit = document.getElementById("card2").children[1];
+          if(dealerS=="Diamond"){
+          dSuit.replaceChild(Diamond2, dSuit.childNodes[0]);
+          }
+        else if(dealerS=="Heart"){
+          dSuit.replaceChild(Heart2, dSuit.childNodes[0]);
+        }
+        else if(dealerS=="Spade"){
+          dSuit.replaceChild(Spade2, dSuit.childNodes[0]);
+        }
+        else if(dealerS=="Club"){
+          dSuit.replaceChild(Club2, dSuit.childNodes[0]);
+        }
+        }
+               
         document.getElementById("playerV").style.color=local[9];        
         document.getElementById("playerS").style.color=local[9];        
         document.getElementById("dealerV").style.color=local[10];        
@@ -184,32 +218,7 @@ $(document).ready(function() {
         displaycard.style.display="none";  
         displaycard2.style.display="none";    
         displaylabelf.style.display ="none";
-        displaycardf.style.display="none";
-      var img1 = document.getElementById("card");
-        var child = img1.children[1];
-        img1.removeChild(child);
-      var img2 = document.getElementById("card2");
-        var child2 = img2.children[1];
-        img2.removeChild(child2);
-      var img3 = document.getElementById("cardf");
-        var child3 = img3.children[1];
-        img3.removeChild(child3);
-        imgDiamond = document.createElement('img');
-  imgDiamond.src = `data:image/png;base64,${base64Diamond}`;
-        imgHeart = document.createElement('img');
-    imgHeart.src = `data:image/png;base64,${base64Heart}`;
-      imgSpade = document.createElement('img');
-  imgSpade.src = `data:image/png;base64,${base64Spade}`;
-      imgClub = document.createElement('img');
-  imgClub.src = `data:image/png;base64,${base64Club}`;
-      Diamond2 = imgDiamond.cloneNode(true);
-      Diamond3 = imgDiamond.cloneNode(true);
-      Spade2 = imgSpade.cloneNode(true);
-      Spade3 = imgSpade.cloneNode(true);
-      Club2 = imgClub.cloneNode(true);
-      Club3 = imgClub.cloneNode(true);
-      Heart2 = imgHeart.cloneNode(true);
-      Heart3 = imgHeart.cloneNode(true);
+        displaycardf.style.display="none";      
         enableButtons();
         enableButtonsF();
         enableChips();
@@ -227,7 +236,32 @@ $(document).ready(function() {
         var thirdV = local[8];
         var thirdS = local[7];
         document.getElementById("thirdV").innerHTML = thirdV;
-        document.getElementById("thirdS").appendChild (imgDiamond);
+        if(start == 1){
+        if(thirdS=="Diamond")
+        {document.getElementById("thirdS").appendChild (imgDiamond);}
+        else if(thirdS=="Heart")
+        {document.getElementById("thirdS").appendChild (imgHeart);}
+        else if(thirdS=="Spade")
+        {document.getElementById("thirdS").appendChild (imgSpade);}
+        else if(thirdS=="Club")
+        {document.getElementById("thirdS").appendChild (imgClub);}
+          start =2;
+        }
+        else if(start!=1){
+          var tSuit = document.getElementById("cardf").children[1];
+          if(thirdS=="Diamond"){
+          tSuit.replaceChild(Diamond3, tSuit.childNodes[0]);
+          }
+        else if(thirdS=="Heart"){
+          tSuit.replaceChild(Heart3, tSuit.childNodes[0]);
+        }
+        else if(thirdS=="Spade"){
+          tSuit.replaceChild(Spade3, tSuit.childNodes[0]);
+        }
+        else if(thirdS=="Club"){
+          tSuit.replaceChild(Club3, tSuit.childNodes[0]);
+        }
+        }
         
     if(color==local[11]){
         colormatch=true;
